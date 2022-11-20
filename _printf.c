@@ -1,0 +1,29 @@
+#include "main.h"
+
+/**
+ * _printf - prints characters to the output screen according to the format
+ * specifier
+ * @format: an argument of all the desired characters
+ * Return: a total count of characters printed
+ */
+
+int _printf(const char *format, ...)
+{
+int print_count;
+conv_f func[] = {
+{"c", printf_char},
+{"s", printf_string},
+{"%", printf_percent},
+};
+
+va_list list;
+
+if (format == NULL)
+return (-1);
+
+va_start(list, format);
+
+print_count = selector(format, func, list);
+va_end(list);
+return(print_count);
+}
