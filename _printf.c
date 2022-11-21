@@ -17,6 +17,11 @@ conv_f func[] = {
 {"i", printf_integer},
 {"d", printf_decimal},
 {"b", printf_binary},
+{"u", printf_unsigned},
+{"o", printf_octal},
+{"x", printf_hex_lower},
+{"X", printf_hex_upper},
+{NULL, NULL},
 };
 
 va_list list;
