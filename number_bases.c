@@ -13,9 +13,12 @@ int i, len;
 char *str;
 char *str_rev;
 
-num = check_sign(list);
-if (num >= 1)
-{
+num = va_arg(list, unsigned int);
+if (num == 0)
+return (_putchar('0'));
+if (num < 1)
+return (-1);
+
 len = _baselen(num, 2);
 str = malloc(sizeof(char) * len + 1);
 if (str == NULL)
@@ -35,6 +38,6 @@ return (-1);
 write_buffer(str_rev);
 free(str);
 free(str_rev);
-}
+
 return (len);
 }
