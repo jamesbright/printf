@@ -52,6 +52,5 @@ char *strev(char *str);
 char *to_ascii(long int num, int base);
 int printf_binary(va_list list);
 
-
 #endif /* _MAIN_H */
 
