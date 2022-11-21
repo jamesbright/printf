@@ -25,5 +25,5 @@ va_start(list, format);
 
 print_count = selector(format, func, list);
 va_end(list);
-return(print_count);
+return (print_count);
 }
