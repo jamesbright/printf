@@ -56,7 +56,7 @@ _putchar(str[i]);
 
 char *strev(char *str)
 {
-int len, i;
+int len, i, j;
 char temp;
 char *dest;
 for (len = 0; str[len] != '\0'; len++)
@@ -70,11 +70,11 @@ for (i = 0; i < len; i++)
 dest[i] = str[i];
 dest[i] = '\0';
 
-for (i = 0; i< len / 2; i++, len--)
+for (j = 0; j < len / 2; j++, len--)
 {
 temp = dest[len -  1];
-str[len - 1] = dest[i];
-str[i] = temp;
+str[len - 1] = dest[j];
+str[j] = temp;
 }
 return (dest);
 }
