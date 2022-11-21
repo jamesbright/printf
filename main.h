@@ -24,6 +24,11 @@ int printf_string(va_list);
 int printf_percent(va_list);
 int printf_integer(va_list i);
 int printf_decimal(va_list dec);
+unsigned int _baselen(unsigned int num, int base);
+void write_buffer(char *str);
+char *strev(char *str);
+int check_sign(va_list list);
+int printf_binary(va_list list);
 
 #endif /* _MAIN_H */
 
