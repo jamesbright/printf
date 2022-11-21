@@ -25,7 +25,7 @@ int printf_percent(va_list);
 int printf_integer(va_list i);
 int printf_decimal(va_list dec);
 unsigned int _baselen(unsigned int num, int base);
-void write_buffer(char *str);
+int write_buffer(char *str);
 char *strev(char *str);
 char *to_ascii(long int num, int base);
 int printf_binary(va_list list);

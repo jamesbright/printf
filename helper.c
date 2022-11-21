@@ -57,11 +57,12 @@ return (i);
  * @str: string to iterate through
  */
 
-void write_buffer(char *str)
+int write_buffer(char *str)
 {
 int i;
 for (i = 0; str[i] != '\0'; i++)
 _putchar(str[i]);
+return (i);
 }
 
 /**
