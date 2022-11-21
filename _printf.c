@@ -16,7 +16,11 @@ conv_f func[] = {
 {"%", printf_percent},
 {"i", printf_integer},
 {"d", printf_decimal},
+<<<<<<< HEAD
 {"p", printf_addressp},
+=======
+{"b", printf_binary},
+>>>>>>> 15eba78ccf20e159487183661396f8459500d696
 };
 
 va_list list;
