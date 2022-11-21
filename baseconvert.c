@@ -12,13 +12,13 @@
 char convert_b(unsigned long int digit, int base, int lowca)
 {
 	static char *dest;
-	static char space[60];
+	static char space[50];
 	char *fptr;
 
 	dest = (lowca)
 		? "0123456789abcdef"
 		: "0123456789ABCDEF";
-	fptr = &space[59];
+	fptr = &space[49];
 	*fptr = '\0';
 	do {
 		*--fptr = dest[digit % base];
