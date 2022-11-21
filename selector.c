@@ -11,36 +11,24 @@
 int selector(const char *format, conv_f func[], va_list list)
 {
 int i, j, val, print_count;
-
 print_count = 0;
-
-/*iterate through th whole string*/
-for (i = 0; format[i] != '\0'; i++)
+for (i = 0; format[i] != '\0'; i++)/*iterate through the whole string*/
 {
-
-/*if we come across first %*/
-if (format[i] == '%')
+if (format[i] == '%')/*if we come across first %*/
 {
-/*find the right function to call according to the specifier*/
 for (j = 0; func[j].sym != NULL; j++)
 {
-/*if we find a format specifier*/
-if (format[i + 1] == func[j].sym[0])
+if (format[i + 1] == func[j].sym[0])/*if we find a format specifier*/
 {
-/*call the associated funcion and get the return val*/
-val = func[j].func(list);
+val = func[j].func(list);/*call the associated funcion and get the return val*/
 if (val == -1)
 return (-1);
-
 print_count += val;
 break;
-
 }
 }
-if (func[j].sym == NULL && format[i + 1] != ' ')
-/*could be \n or \t etc, print it*/
+if (func[j].sym == NULL && format[i + 1] != ' ')/*could be \n*/
 {
-
 if (format[i + 1] != '\0')
 {
 _putchar(format[i]);
@@ -50,8 +38,7 @@ print_count += 2;
 else
 return (-1);
 }
-/*skip format symbols*/
-i += 1;
+i += 1;/*skip format symbols*/
 }
 else
 {
@@ -61,3 +48,4 @@ print_count++;
 }
 return (print_count);
 }
+
