@@ -51,6 +51,11 @@ int write_buffer(char *str);
 char *strev(char *str);
 char *to_ascii(long int num, int base);
 int printf_binary(va_list list);
+int printf_unsigned(va_list list);
+int printf_octal(va_list list);
+int printf_hex_lower(va_list list);
+int printf_hex_upper(va_list list);
+
 
 #endif /* _MAIN_H */
 
