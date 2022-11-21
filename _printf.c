@@ -27,3 +27,4 @@ print_count = selector(format, func, list);
 va_end(list);
 return (print_count);
 }
+
