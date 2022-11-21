@@ -27,7 +27,7 @@ int printf_decimal(va_list dec);
 unsigned int _baselen(unsigned int num, int base);
 void write_buffer(char *str);
 char *strev(char *str);
-int check_sign(va_list list);
+char *to_ascii(long int num, int base);
 int printf_binary(va_list list);
 
 #endif /* _MAIN_H */

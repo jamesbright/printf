@@ -1,21 +1,36 @@
 #include "main.h"
 
-
 /**
- * check_sign - checks the sign of number
- * @list: argument list containing number
- * Return: number if positive
+ * to_ascii - converts integer to ascii
+ * @num: number to convert
+ * @base base to use for conversion
+ * Return: char
  */
 
-int check_sign(va_list list)
+char *to_ascii(long int num, int base)
 {
-unsigned int num;
-num = va_arg(list, unsigned int);
-if (num == 0)
-return (_putchar('0'));
-if (num < 1)
-return (-1);
-return (num);
+static char *array = "0123456789abcdef";
+static char buffer[50];
+char sign = 0;
+char *ptr;
+unsigned long n = num;
+
+if (num < 0)
+{
+n = -num;
+sign = '-';
+}
+ptr = &buffer[49];
+*ptr = '\0';
+
+do      {
+*--ptr = array[n % base];
+n /= base;
+} while (n != 0);
+
+if (sign)
+*--ptr = sign;
+return (ptr);
 }
 
 /**
