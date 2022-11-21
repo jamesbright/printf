@@ -32,7 +32,7 @@ typedef struct flags
 	int negative;
 	int zero;
 
-} flags_f
+} flags_f;
 
 int _puts(char *s);
 int _putchar(char c);

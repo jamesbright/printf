@@ -16,7 +16,6 @@ conv_f func[] = {
 {"%", printf_percent},
 {"i", printf_integer},
 {"d", printf_decimal},
-{"p", printf_addressp},
 {"b", printf_binary},
 {"u", printf_unsigned},
 {"o", printf_octal},

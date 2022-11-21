@@ -28,15 +28,6 @@ int obt_flag(char src, flags_f *f)
 		index = 1;
 		break;
 
-		case '0';
-		f->zero = 1;
-		index = 1;
-		break;
-
-		case '-';
-		f->negative = 1;
-		index = 1;
-		break;
 	}
 	return (index);
 }
