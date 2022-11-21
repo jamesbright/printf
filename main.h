@@ -24,6 +24,7 @@ int (*func)(va_list);
  * @negative: a neg sign modifier
  * @zero: convert 0 modifier
  */
+
 typedef struct flags
 {
 	int plus;
