@@ -14,6 +14,8 @@ conv_f func[] = {
 {"c", printf_char},
 {"s", printf_string},
 {"%", printf_percent},
+{"i", printf_integer},
+{"d", printf_decimal},
 };
 
 va_list list;
