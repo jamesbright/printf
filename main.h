@@ -102,4 +102,3 @@ int h_width(va_list para, const char *mod, char *f);
 int h_precision(va_list para, const char *mod, char *f);
 
 #endif /* _MAIN_H */
-
