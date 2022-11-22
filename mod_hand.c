@@ -7,7 +7,7 @@ int h_width(va_list para, const char *mod, char *f);
 int h_precision(va_list para, const char *mod, char *f);
 
 /**
- * h_flags - handle the flag with its value
+ * h_flags - to handle the flag with its value
  * @flag: the flag to the strings
  * @f: pointer to the string
  * Return: if the character match value otherwise 0
