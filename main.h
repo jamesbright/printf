@@ -26,12 +26,12 @@
  * struct flag_b - A new type defining a flags struct.
  * @flag: A character representing a flag.
  * @value: The integer value of the flag.
- *
+ */
 typedef struct flag_b
 {
 	unsigned char flag;
 	unsigned char value;
-} flag_k;*/
+} flag_k;
 
 /**
  * struct flags - struct containing flags to "turn on"
