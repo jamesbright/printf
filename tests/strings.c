@@ -6,7 +6,7 @@
  * Return: Always 0
  */
 
-int main1(void)
+int main(void)
 {
 int len;
 int len2;
@@ -25,5 +25,6 @@ printf("String Len2:[%d]\n", len2);
 
 _printf("%%");
 
+ _printf("Reversed string: %r", " Let's try to printf a simple sentence.\n");
 return (0);
 }

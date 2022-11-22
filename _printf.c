@@ -22,6 +22,7 @@ conv_f func[] = {
 {"x", printf_hex_lower},
 {"X", printf_hex_upper},
 {"p", printf_addressp},
+{"r", printf_revstring},
 {NULL, NULL},
 };
 

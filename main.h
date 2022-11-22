@@ -22,6 +22,7 @@ int selector(const char *format, conv_f func[], va_list list);
 int _printf(const char *format, ...);
 int printf_char(va_list);
 int printf_string(va_list);
+int printf_revstring(va_list);
 int printf_percent(va_list);
 int printf_integer(va_list i);
 int printf_decimal(va_list dec);
