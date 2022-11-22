@@ -17,6 +17,7 @@ int (*func)(va_list);
 } conv_f;
 
 int _putchar(char c);
+int _strcmp(char *, char *);
 int selector(const char *format, conv_f func[], va_list list);
 int _printf(const char *format, ...);
 int printf_char(va_list);
@@ -33,6 +34,7 @@ int printf_unsigned(va_list list);
 int printf_octal(va_list list);
 int printf_hex_lower(va_list list);
 int printf_hex_upper(va_list list);
+int printf_addressp(va_list list);
 
 
 #endif /* _MAIN_H */

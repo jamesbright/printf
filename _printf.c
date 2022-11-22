@@ -21,6 +21,7 @@ conv_f func[] = {
 {"o", printf_octal},
 {"x", printf_hex_lower},
 {"X", printf_hex_upper},
+{"p", printf_addressp},
 {NULL, NULL},
 };
 
