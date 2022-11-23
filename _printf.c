@@ -24,6 +24,7 @@ conv_f func[] = {
 {"p", printf_addressp},
 {"r", printf_revstring},
 {"R", printf_rot13},
+{"S", printf_stringS},
 {NULL, NULL},
 };
 

@@ -94,6 +94,9 @@ int printf_octal(va_list list);
 int printf_hex_lower(va_list list);
 int printf_hex_upper(va_list list);
 int printf_addressp(va_list list);
+int printf_stringS(va_list list);
+int _aux(unsigned int num);
+
 
 /*handle modifiers*/
 unsigned char h_flags(const char *flag, char *f);
